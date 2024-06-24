@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(43, 23, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nunito;
+    color: #FFFFFF;
+}
+
+.card {
+    width: 20rem;
+    height: auto;
+    min-height: 10rem;
+    background-color: rgb(75, 45, 34);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.profileSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-image: url(./assets/images/channels4_profile.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.name {
+    padding: 0.25rem 0;
+    font-size: 2rem;
+    color: #ffd5b3;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    margin: 1rem 0;
+    display: none;
+}
+
+.bio {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 1rem;
+    border-color: rgb(255, 197, 149);
+    color: #ffd5b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem -1rem;
+}
+
+/* .button {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0.5rem 0.65rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+} */
+
+.button i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 197, 149);
+    font-size: 14px;
+    background: transparent;
+    color: #ffd5b3;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+  
+  .button:hover {
+    background: rgb(255, 197, 149);
+    box-shadow: 0 0 30px 5px rgba(255, 161, 132, 0.815);
+    color: rgb(75, 36, 10);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  

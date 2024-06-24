@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./huh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ishikaze.space</title> 
+</head>
+<body>
+    <div class="card">
+        <div class="profileSection">
+            <div class="pfp"></div>
+            <div class="name">
+                <span>Ishikaze</span>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="bio">
+            <span>hi and welcome to my temp landing page! i make funky sounds and post them online!
+            </span>
+        </div>
+        <div class="buttons">
+            <div class="button" id="youtube"><i class="fa-brands fa-youtube"></i> youtube</div>
+            <div class="button" id="spotify"><i class="fa-brands fa-spotify"></i> spotify</div>
+            <div class="button" id="instagram"><i class="fa-brands fa-instagram"></i> instagram</div>
+            <div class="button" id="email"><i class="fa-solid fa-envelope"></i> email me</div>
+            <div class="button" id="github"><i class="fa-brands fa-github"></i> the page i'm working on</div>
+        </div>
+    </div>
+
+    <script>
+        const youtube = document.getElementById('youtube')
+        const spotify = document.getElementById('spotify')
+        const instagram = document.getElementById('instagram')
+        const email = document.getElementById('email')
+        const github = document.getElementById('github')
+
+        youtube.onclick = function() {
+            window.open('https://www.youtube.com/channel/UC-9MN1ywJ1oynts326Tb3pg', '_blank').focus();
+        }
+        spotify.onclick = function() {
+            window.open('https://open.spotify.com/artist/6ormH2pMPFIJIP9vxnqvKE', '_blank').focus();
+        }
+        instagram.onclick = function() {
+            window.open('https://www.instagram.com/ishikaze', '_blank').focus();
+        }
+        email.onclick = function() {
+            window.open('mailto:contact@ishikaze.space', '_blank').focus();
+        }
+        github.onclick = function() {
+            window.open('https://github.com/Ishikaze/Ishikaze.space', '_blank').focus();
+        }
+    </script>
+</body>
+</html>
