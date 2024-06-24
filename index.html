@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./huh.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Ishikaze.space</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ishikaze.space</title>
 </head>
+
 <body>
     <div class="card">
         <div class="profileSection">
@@ -36,21 +40,33 @@
         const email = document.getElementById('email')
         const github = document.getElementById('github')
 
-        youtube.onclick = function() {
-            window.open('https://www.youtube.com/channel/UC-9MN1ywJ1oynts326Tb3pg', '_blank').focus();
+        youtube.onclick = function () {
+            setTimeout(() => {
+                window.open('https://www.youtube.com/channel/UC-9MN1ywJ1oynts326Tb3pg', '_blank').focus();
+            }, 250)
+
         }
-        spotify.onclick = function() {
-            window.open('https://open.spotify.com/artist/6ormH2pMPFIJIP9vxnqvKE', '_blank').focus();
+        spotify.onclick = function () {
+            setTimeout(() => {
+                window.open('https://open.spotify.com/artist/6ormH2pMPFIJIP9vxnqvKE', '_blank').focus();
+            }, 250)
         }
-        instagram.onclick = function() {
-            window.open('https://www.instagram.com/ishikaze', '_blank').focus();
+        instagram.onclick = function () {
+            setTimeout(() => {
+                window.open('https://www.instagram.com/ishikaze', '_blank').focus();
+            }, 250)
         }
-        email.onclick = function() {
-            window.open('mailto:contact@ishikaze.space', '_blank').focus();
+        email.onclick = function () {
+            setTimeout(() => {
+                window.open('mailto:contact@ishikaze.space', '_blank').focus();
+            }, 250)
         }
-        github.onclick = function() {
-            window.open('https://github.com/Ishikaze/Ishikaze.space', '_blank').focus();
+        github.onclick = function () {
+            setTimeout(() => {
+                window.open('https://github.com/Ishikaze/Ishikaze.space', '_blank').focus();
+            }, 250)
         }
     </script>
 </body>
+
 </html>
